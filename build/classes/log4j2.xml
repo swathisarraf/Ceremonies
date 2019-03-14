@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+	<properties>
+		<Property name="logDir">${sys:jboss.server.log.dir}</Property>
+		<property name="logFile">calnetAutomation.log</property>
+		<property name="fileName">${logDir}/${logFile}</property>
+	</properties>
+
+	<Appenders>
+		<Console name="AppConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout pattern="%c{1}:%L - %m%n" />
+		</Console>
+
+		<RollingFile name="AppFileAppender" fileName="${fileName}"
+			filePattern="$${fileName}.%d{yyyy-MM-dd}.gz" append="true">
+
+			<!-- <PatternLayout pattern="%d{ABSOLUTE} %-5p %c{1}:%L - %m%n" /> -->
+			<PatternLayout
+				pattern="%d{ABSOLUTE} [%X{Protocol}] [%X{LoginId}] [%X{RemoteAddress}] [%X{UserAgent}] %-5p %c{1}:%L - %m%n" />
+
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+			<DefaultRolloverStrategy>
+				<Delete basePath="${logDir}" maxDepth="2">
+					<IfFileName glob="${logFile}.*">
+						<IfLastModified age="30d" />
+					</IfFileName>
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+
+	</Appenders>
+
+	<Loggers>
+		<!-- <Logger name="com.att" level="ALL">
+			<AppenderRef ref="" level="ALL" />
+		</Logger> -->
+
+		<root level="trace">
+			<AppenderRef ref="AppConsoleAppender" level="ALL" />
+      		<AppenderRef ref="AppFileAppender" level="ALL" />
+		</root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,80 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:form id="headerForm">
+		<nav
+			class="navbar navbar-light navbar-expand-sm navbar-custom py-0 py-md-0">
+			<a class="navbar-brand py-0 py-md-0 font-weight-bold" href="">
+			<img class="float-left" alt="Calnet" src="../resources/img/att_globe.png"
+						style="height: 35px; width: 35px"/> <p:spacer width="5"></p:spacer> Ceremonies </a>
+			<button class="navbar-toggler py-0 py-md-0 " type="button"
+				data-toggle="collapse" data-target="#navbarCustom"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="fa fa-bars fa-lg py-1 text-white"></i>
+			</button>
+			<div class="navbar-collapse collapse py-0 py-md-0 "
+				id="navbarCustom">
+				
+				<ul class="navbar-nav">
+					<li class="nav-item py-0 py-md-0"><a
+						class="nav-link py-0 py-md-0 " href="#" style="border-radius: 5px;">Home <i class="fa fa-fw fa-home"></i></a></li>
+					<p:spacer width="5"></p:spacer>
+					<li class="nav-item dropdown py-0 py-md-0 "><a
+						class="nav-link py-0 py-md-0 dropdown-toggle"  style="border-radius: 5px;" href="#"
+						id="navbarDropdown" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> View </a>
+						<div class="dropdown-menu py-0 py-md-0 font-weight-bold"
+							aria-labelledby="navbarDropdown">
+							 <a class="dropdown-item" href="#">Agency</a> <a
+								class="dropdown-item" href="#">Contacts</a> <a
+								class="dropdown-item" href="#">Catalog</a> <a
+								class="dropdown-item" href="#">Tickets</a> <a
+								class="dropdown-item" href="#">External Reports</a>
+						</div></li>
+					<p:spacer width="5"></p:spacer>	
+					<h:panelGroup id="mainMenuBar" rendered="#" >
+					<li class="nav-item py-0 py-md-0 dropdown "><a
+						class="nav-link py-0 py-md-0 dropdown-toggle " style="border-radius: 5px;" href="#"
+						id="navbarDropdown" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> Admin </a>
+						<div class="dropdown-menu py-0 py-md-0 font-weight-bold"
+							aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Contract Documents</a> <a
+								class="dropdown-item" href="#">MCN Triplets</a> <a
+								class="dropdown-item" href="#">New Agency</a><a
+								class="dropdown-item" href="#">New Agency Group</a><a
+								class="dropdown-item" href="#">Catalog</a><a
+								class="dropdown-item" href="#">Amendments</a> <a
+								class="dropdown-item" href="#">Agency Reports</a> <a
+								class="dropdown-item" href="#">FMR Reports</a> <a
+								class="dropdown-item" href="#">Address Maintenance</a> <a
+								class="dropdown-item" href="#">Web Upload</a>
+						</div></li>			
+					</h:panelGroup>		
+				</ul>
+				
+				<span class="ml-auto navbar-text"> 
+					<h:commandLink
+								 title="User Name" class="badge font-weight-normal" style="font-size: 15px;background-color: #d7ecfb;color:#000000;"
+								value="" >"swathi" <i class="fa fa-id-badge"></i> </h:commandLink>
+					<p:spacer width="5"></p:spacer>
+					<h:outputLink 
+								 title="Report Issue" class="badge font-weight-normal" style="font-size: 15px;background-color: #d7ecfb;color:#000000;"
+								value="mailto:ssarraf@csc.com?subject=Ceremonies Defect" >Report Issue <i class="fa fa-envelope"></i> </h:outputLink >
+					<p:spacer width="5"></p:spacer>					
+					<h:commandLink 
+								 title="Help" class="badge font-weight-normal" style="font-size: 15px;background-color: #d7ecfb;color:#000000;"
+								value="" >Help <i class="fa fa-question-circle"></i> </h:commandLink>
+					<p:spacer width="5"></p:spacer>
+					<h:commandLink actionListener="#" title="Logout" class="badge font-weight-normal" style="font-size: 15px;background-color: #d7ecfb;color:#000000;"
+								value="" >Logout <i class="fa fa-power-off"></i> </h:commandLink>
+				</span>
+			</div>
+		</nav>
+		
+	</h:form>
+</ui:composition>

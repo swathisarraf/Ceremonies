@@ -1,0 +1,353 @@
+/*
+commented to make it mobile vertical scrollable
+
+ html { 
+  overflow: hidden;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+} */
+form {
+	margin: auto;
+}
+
+.icon {
+	padding: 2px;
+	vertical-align: middle;
+	border: none;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.ui-selectonemenu {
+	padding-right: 1em !important;
+}
+
+.ui-selectonemenu-label {
+	width: 100% !important;
+}
+
+.ui-selectonemenu-item.ui-selectonemenu-list-item.ui-state-highlight {
+	background: #007bff;
+	color: #000000;
+}
+
+.ui-selectonemenu-item.ui-selectonemenu-list-item.ui-state-hover {
+	background: #007bff;
+	color: #000000;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item {
+	font-size: 12px !important;
+}
+
+.ui-selectonemenu label.ui-selectonemenu-label {
+	font-size: 12px !important;
+	color: black !important;
+}
+
+.ui-datatable-empty-message div {
+	*width: auto !important;
+}
+
+.width100P {
+	width: 100%;
+}
+
+.title {
+	text-align: left;
+	font-weight: bold;
+}
+
+.ceremonyNewGrid.ui-panelgrid>*>tr, .ceremonyNewGrid.ui-panelgrid .ui-panelgrid-cell
+	{
+	border: none;
+}
+
+.agencyGrid.ui-panelgrid>*>tr, .agencyGrid.ui-panelgrid .ui-panelgrid-cell
+	{
+	border: none;
+}
+
+.ui-panelgrid-content.ui-widget-content.ui-grid.ui-grid-responsive {
+	border: none;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+.ui-widget-content a {
+	text-decoration: underline;
+	/* color: #0000ff; */
+	color: #0568ae;
+}
+
+/* .ui-datatable-scrollable .ui-datatable-scrollable-header-box, .ui-datatable-scrollable .ui-datatable-scrollable-footer-box {
+    float: left;
+    padding-right: 40px;
+} */
+/*scrollable datatable pagination width fixes */
+.ui-datatable-scrollable-footer .ui-datatable-scrollable-header-box {
+	float: none !important;
+	padding-right: 0px !important;
+}
+
+.ui-datatable-scrollable-footer table {
+	width: 100% !important;
+}
+/*end*/
+
+/* autocomplete width setting */
+/* .ui-widget-header .ui-inputfield, .ui-widget-content .ui-inputfield {
+    width: 300px;
+} */
+
+/* autocomplete height setting */
+.ui-autocomplete-panel .ui-autocomplete-list {
+	max-height: 200px;
+}
+
+.ui-autocomplete-panel .ui-autocomplete-list-item {
+	font-size: 12px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight,
+	.ui-widget-header .ui-state-highlight {
+	/* background: #007bff; */
+	background: #009fdb;
+	color: #000000;
+}
+
+.ui-icon-triangle-1-s {
+	background-position: -67px -16px;
+}
+
+.ui-growl-message {
+	font-size: 13px;
+	/* padding: 0 0 0 10px !important; */
+	float: none !important;
+	width: auto !important;
+}
+
+.ui-growl-item {
+	background: #ead55a;
+}
+
+.ui-growl-item-container {
+	opacity: 1 !important;
+}
+
+.ui-growl-message p {
+	padding: 0 0 0 10px;
+}
+
+div.ui-growl {
+	position: fixed;
+	top: 40%;
+	left: 40%;
+	width: 400px;
+}
+
+.ui-dialog .ui-dialog-title {
+	font-size: 15px;
+}
+
+.ui-confirm-dialog-message {
+	font-size: 14px;
+}
+
+.ui-button-text-icon-left .ui-button-text {
+	font-size: 13px;
+}
+
+.ui-datepicker {
+	font-size: 12px;
+}
+
+.ui-datepicker-unselectable .ui-state-disabled {
+	background-color: #e9ecef !important;
+	color: black !important;
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield
+	{
+	color: black;
+}
+
+.ui-autocomplete-input.ui-inputfield.ui-widget.ui-state-default.ui-corner-all
+	{
+	width: 100%;
+}
+
+.ui-inputfield.ui-widget.ui-state-default.ui-corner-all.ui-state-disabled
+	{
+	background-color: #dddddd !important;
+	color: black !important;
+	opacity: 1 !important;
+}
+
+/* .ui-state-disabled, .ui-widget-content.ui-state-disabled, .ui-widget-header.ui-state-disabled {
+    background-color: #dddddd !important;
+    color: black !important;
+    opacity: 1 !important;
+}
+*/
+.ui-selectonemenu-label.ui-inputfield.ui-corner-all.ui-state-disabled {
+	background-color: #ffffff !important;
+	color: black !important;
+	opacity: 1 !important;
+}
+
+textarea {
+	resize: none;
+	max-height: 50px;
+}
+
+/* .ui-inputfield.ui-widget.ui-state-default.ui-corner-all.hasDatepicker{
+	width: 72%;
+} */
+.ui-datatable-scrollable-body {
+	overflow: scroll !important;
+}
+
+.ui-datatable-scrollable-header-box {
+	margin-right: 17px !important;
+}
+
+.ui-dialog-content.ui-widget-content {
+	padding: .5em .5em !important;
+	overflow: hidden !important;
+}
+
+.ui-autocomplete-panel.ui-widget-content.ui-corner-all.ui-helper-hidden.ui-shadow
+	{
+	font-size: 12px;
+	width: 600px !important;
+}
+
+.pdfImgClass {
+	background-image: url(../resources/img/pdf.png) !important;
+	background-size: 1.7em !important;
+	background-position: center !important;
+}
+
+.ui-picklist-caption.ui-widget-header.ui-corner-tl.ui-corner-tr {
+	font-size: 13px !important;
+}
+
+.ui-picklist .ui-picklist-list li {
+	font-size: 12px !important;
+}
+
+.ui-picklist .ui-picklist-list {
+	width: 465px !important;
+	height: 150px !important;
+}
+
+.ui-picklist-buttons-cell {
+	font-size: 12px;
+	width: 30px;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child {
+	width: 13.5em !important;
+}
+
+.ui-menubar {
+	background-image: -webkit-linear-gradient(top, #71C5E8 0%, #009FDB 100%)
+		!important;
+	background-image: linear-gradient(to bottom, #71C5E8 0%, #009FDB 100%)
+		!important;
+	background-repeat: repeat-x !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#71C5E8',
+		endColorstr='#009FDB', GradientType=0) !important;
+	/* border-radius: 25px !important; */
+}
+
+.ui-menu {
+	padding-bottom: 1px !important;
+	padding-left: 1px !important;
+	padding-right: 15px !important;
+	padding-top: 1px !important;
+}
+
+.ui-menubar .ui-menuitem-link {
+	padding-bottom: 1px !important;
+	padding-left: 1px !important;
+	padding-right: 5px !important;
+	padding-top: 1px !important;
+	color: black;
+}
+
+/* .ui-widget .ui-menuitem .ui-corner-all .ui-menu-parent .ui-menuitem-active
+.ui-menuitem-link .ui-submenu-link .ui-corner-all .ui-state-hover{
+	color: #ea7400;
+	background-color: #ea7400;
+} */
+.oldRec {
+	background-color: #dddddd !important;
+	background-image: none !important;
+	color: black !important;
+}
+
+.ui-selectonemenu.ui-state-disabled .ui-selectonemenu-trigger,
+	.ui-selectonemenu.ui-state-disabled .ui-selectonemenu-label {
+	background-color: #dddddd !important;
+	background-image: none !important;
+	color: black !important;
+}
+
+/* .ui-row-editor > .ui-icon-pencil {
+  background-image: url(../images/myPencil.png) !important;
+  height: 20px;
+  width:20px;
+ } 
+ 
+ .pen::before {
+   
+}
+
+.check::before {
+    
+}
+
+.cross::before {
+    
+}
+ 
+ 
+ */
+
+/* .ui-datatable .ui-row-editor  .ui-row-editor-pencil{
+  background-image: url(../resources/img/pencil-24.png) !important;
+  height: 20px;
+  width:20px;
+}
+
+.ui-datatable .ui-row-editor  .ui-row-editor-check {
+   background-image: url(../resources/img/checkmark-24.png) !important;
+  height: 20px;
+  width:20px;
+}
+
+.ui-datatable .ui-row-editor  .ui-row-editor-close {
+   background-image: url(../resources/img/multiply-24.png) !important;
+  height: 20px;
+  width:20px;
+} */
+
+.ui-datatable tr.ui-state-highlight{
+	    background: #bdcfd600 !important;
+}

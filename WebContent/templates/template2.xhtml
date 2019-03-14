@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- Bootstrap core CSS -->
+		<h:outputStylesheet library="css" name="bootstrap.css" />
+		<h:outputStylesheet library="css" name="navs.css" />
+		<h:outputStylesheet library="css" name="custom.css" />
+		<h:outputStylesheet library="css" name="style.min.css" />
+		<h:outputScript library="js" name="popper.min.js" />
+		<h:outputScript library="js" name="bootstrap.js" />
+		<h:outputScript library="js" name="common.js" />
+		<h:outputScript library="js" name="utils.js" />
+		<link rel="shortcut icon" type="image/x-icon"
+			href="#{resource['img/favicon.ico']}" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--  <ui:insert name="head" /> -->
+
+	</h:head>
+	<h:body >
+
+		<p:growl id="growl" showDetail="true" life="3000" severity="info" />
+		<p:growl id="error" showDetail="true" sticky="true"
+			severity="warn,error" />
+		<div id="header">
+			<ui:include src="/faces/header.xhtml" />
+		</div>
+
+		<div id="content">
+			<ui:insert name="menu"></ui:insert>
+			<ui:insert name="content"></ui:insert>
+		</div>
+
+		<div id="footer" class="width100P"
+			style="position: absolute; bottom: 0px;">
+			<ui:insert name="footer"></ui:insert>
+		</div>
+
+		<ui:insert name="popup"></ui:insert>
+		<p:ajaxStatus onstart="PF('statusDialog').show()"
+			onsuccess="PF('statusDialog').hide()" />
+
+		<p:dialog widgetVar="statusDialog" modal="true" draggable="false"
+			closable="false" resizable="false" showHeader="false">
+			<p:graphicImage name="img/loader.gif" />
+		</p:dialog>		
+	</h:body>
+</f:view>
+</html>
+
